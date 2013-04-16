@@ -87,7 +87,7 @@ function setScene(scene) {
             
             /* set bg */
             if (current_scene.background) {
-                $('#scene').css('background-image', 'url(' + 'img/' + current_scene.background + ')');
+                $('#scene').css('background-image', 'url(' + '/img/' + current_scene.background + ')');
             }
             
             /* clear characters then set */
@@ -95,7 +95,7 @@ function setScene(scene) {
             
             for (var i = 0; i < current_scene.characters.length; i++) {
             
-                $( "<img/>" ).attr( "src", 'img/' + current_scene.characters[i][0] + '.png' ).addClass(current_scene.characters[i][1]).appendTo( "#characters" );
+                $( "<img/>" ).attr( "src", '/img/' + current_scene.characters[i][0] + '.png' ).addClass(current_scene.characters[i][1]).appendTo( "#characters" );
             
                 /* $('#scene img').attr('src', 'img/' + current_scene.characters[i][0] + '.png').attr('class', 'refresh-target').addClass(current_scene.characters[i][1]); */
             }
