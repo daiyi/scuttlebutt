@@ -1,12 +1,12 @@
 #content {
-    background: url('../img/darkfloral_gray.jpg') repeat;
+    background: url('../../img/darkfloral_gray.jpg') repeat;
 }
 
 #scene {
     width: 900px;
     height: 600px;
     position: relative; 
-    background: url('../img/darkfloral_gray.jpg') no-repeat;
+    background: url('../../img/darkfloral_gray.jpg') no-repeat;
 }
 
 #cargo {
@@ -17,7 +17,7 @@
     border-width: 1px 1px 0px 1px;
     position: absolute; 
     bottom: 0;
-    background: url('/img/black_alpha85.png') repeat;
+    background: url('../../img/black_alpha85.png') repeat;
 }
 
 #cargo h2 {
