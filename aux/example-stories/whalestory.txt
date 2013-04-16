@@ -1,0 +1,21 @@
+[SCENE] whaletiem2
+[title] Kujira
+[character] kujira-excited -> orientation-flipped width-23 height-94 [background] beach.jpg
+[text] GUYS GUYS GUYS
+Do you want to get ice cream. |: 
+[/text]
+[text] If I don't eat ice cream within the next few minutes I will probably die 
+[/text]
+[next] whaletiem3 -> Yeah, let’s go!
+[next] whaletiem4 -> I’m allergic to ice cream. D:
+[END]
+[SCENE] whaletiem4
+[title] Kujira
+[character] kujira-excited -> orientation-normal 
+[character] shay-despair -> orientation-flipped width-23 height-94
+[background] beach.jpg
+[text] can I die instead
+[/text]
+[next] whaletiem6 -> Get ice cream
+[next] whaletiem7 -> burrow into the ground
+[END]
