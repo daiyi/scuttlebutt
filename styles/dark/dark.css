@@ -61,7 +61,7 @@ hr {
     margin: 0 auto;
     width: 900px;
     border: 1px solid #2f2f2f;
-    background: url('/img/darkfloral.jpg') repeat;
+    background: url('img/darkfloral.jpg') repeat;
 }
 
 
@@ -73,7 +73,7 @@ hr {
     border-width: 1px 1px 0px 1px;
     position: absolute; 
     bottom: 0;
-    background: url('../../img/black_alpha85.png') repeat;
+    background: url('img/black_alpha85.png') repeat;
 }
 
 #scene {
@@ -87,7 +87,7 @@ hr {
     width: 900px;
     min-height: 600px;
     position: relative; 
-    background: url('../../img/darkfloral_gray.jpg') no-repeat;
+    background: url('img/darkfloral.jpg') no-repeat;
 }
 
 #overall-wrapper {
@@ -110,7 +110,7 @@ h1 {
 	font-family: "Special Elite", sans-serif;
 	font-weight: normal;
 	font-size: 3em;
-    margin: 20px 0px;
+    margin: 10px 0px;
 }
 
 
@@ -124,7 +124,8 @@ h1 a:hover {
 
 /*** story title **/
 #storytitle {
-    font-size: 2.4em;
+    font-size: 2em;
+    margin: 10px 0px;
 }
 
 #subtitle {
@@ -206,11 +207,11 @@ h3 {
     color: #46cb62;
 }
 
-h2 a:link, h2 a:visited {
+h3 a:link, h3 a:visited {
     color: #bfbfbf;
 }
 
-h2 a:hover {
+h3 a:hover {
     text-decoration: none;
     letter-spacing: 0.1em;
 }

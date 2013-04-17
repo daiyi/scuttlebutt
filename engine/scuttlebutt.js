@@ -9,9 +9,13 @@
  *
  */
 
+var STORY_PATH = "stories/boston";
+var STORY_NAME = "/boston.json";
+var IMAGE_FOLDER = "/img/";  // also retures a trailing /
+var FIRST_SCENE = "intro";
+
 var story;
 var current_scene;
-var FIRST_SCENE = "intro";
 
 jQuery(document).ready(function() {
 
@@ -56,7 +60,7 @@ function hardjump(scene) {
 function loadstory(callback) {
     // Assign handlers immediately after making the request,
     // and remember the jqxhr object for this request
-    var getstory = $.getJSON( "/boston/aux/boston.json", function() {
+    var getstory = $.getJSON( STORY_PATH + STORY_NAME, function() {
         console.log( "loadstory success :D" );
     })
     .done(function( data ) {
@@ -87,7 +91,7 @@ function setScene(scene) {
             
             /* set bg */
             if (current_scene.background) {
-                $('#scene').css('background-image', 'url(' + '/img/' + current_scene.background + ')');
+                $('#scene').css('background-image', 'url(' + STORY_PATH + IMAGE_FOLDER + current_scene.background + ')');
             }
             
             /* clear characters then set */
@@ -95,9 +99,9 @@ function setScene(scene) {
             
             for (var i = 0; i < current_scene.characters.length; i++) {
             
-                $( "<img/>" ).attr( "src", '/img/' + current_scene.characters[i][0] + '.png' ).addClass(current_scene.characters[i][1]).appendTo( "#characters" );
+                $( "<img/>" ).attr( "src", STORY_PATH + IMAGE_FOLDER + current_scene.characters[i][0] + '.png' ).addClass(current_scene.characters[i][1]).appendTo( "#characters" );
             
-                /* $('#scene img').attr('src', 'img/' + current_scene.characters[i][0] + '.png').attr('class', 'refresh-target').addClass(current_scene.characters[i][1]); */
+                /* $('#scene img').attr('src', STORY_PATH + IMAGE_FOLDER + current_scene.characters[i][0] + '.png').attr('class', 'refresh-target').addClass(current_scene.characters[i][1]); */
             }
             
             /* fade in chars and text */
