@@ -1,13 +1,16 @@
 /* 
- *  Scuttlebutt JS ... omfg what do you call something before it is even in alpha ;A;
- *  visual storytelling with jQuery
+ *  scuttlebutt v0.1.0
  *
- *  by daiyi [_.]^
+ *  jQuery visual novel engine 
+ *  https://github.com/daiyiwhale/scuttlebutt
  *
- *  TODO: everything |:
+ *  copyright 2013 Christine Sun [_.]^
+ *  http://daiyi.tumblr.com
  *
+ *  released under GPL license :D FOR JUSTICE
  *
  */
+
 
 var STORY_PATH = "stories/boston";
 var STORY_NAME = "/boston.json";
