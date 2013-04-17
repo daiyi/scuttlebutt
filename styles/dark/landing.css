@@ -1,0 +1,23 @@
+@import url("dark.css");
+
+#scene {
+    overflow:  hidden;
+}
+
+
+#cargo {
+    width: auto;
+    margin: 20px;
+    padding: 2px 20px 20px 20px;
+    border: 1px solid #2f2f2f;
+    background-color: #232323;
+    color: #969696;
+    position: relative; 
+}
+
+
+#cargo h2 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
