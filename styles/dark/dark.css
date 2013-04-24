@@ -61,7 +61,6 @@ hr {
     margin: 0 auto;
     width: 900px;
     border: 1px solid #2f2f2f;
-    background: url('img/darkfloral.jpg') repeat;
 }
 
 
@@ -76,24 +75,43 @@ hr {
     background: url('img/black_alpha85.png') repeat;
 }
 
-#scene {
-    width: 900px;
-    height: 600px;
-    position: relative; 
-    overflow:  hidden;
+#cargo-text {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#cargo-nav {
+    width: 100%;
+    text-align: right;
+}
+
+.textblock {
+/*    width: 820;
+    position: absolute; 
+    top: 15px; */
 }
 
 #scene {
     width: 900px;
-    min-height: 600px;
+    height: 600px;
     position: relative; 
-    background: url('img/darkfloral.jpg') no-repeat;
+    background: none;
+    overflow:  hidden;
 }
 
 #overall-wrapper {
 }
 
-
+#background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('img/darkfloral.jpg') repeat; 
+    z-index: -1;
+}
 
 .star {
     font-size: 5em;
