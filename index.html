@@ -1,68 +1,58 @@
 <!DOCTYPE html>
 <html>
+  <head>
 
-<head>
-
-    <meta name="dcterms.rights" content="2013 Christine Sun" />
-    <meta name="keywords" content="" />
     <meta name="description" content="scuttlebutt, a visual novel engine" />
 
     <title>scuttlebutt | visual novel engine</title>
 
-    <script type="text/javascript" src="engine/jquery-1.9.1.min.js"></script>
-    <script type="text/javascript" src="engine/scuttlebutt.js"></script>
-    
-    <link rel="stylesheet" type="text/css" href="styles/dark/dark.css" />
-    
     <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="styles/dark/dark.css" />
 
-</head>
+  </head>
 
-<body>
+  <body>
 
-<div id="overall-wrapper">
-
-    <div id="header">
-    
-        <h1><a href="/">scuttlebutt | visual novel engine</a></h1>
+    <div id="overall-wrapper">
+      <div id="header">
+	
+        <h1><a href="/">scuttlebutt</a></h1>
         
-        <div id="storytitle">boston</div>
-        <div id="subtitle">a derptastic example story | script by daiyi & weiyun, art by rach</div>
+        <div id="storytitle">visual novel engine demonstration</div>
+        <div id="subtitle">script by daiyi & weiyun, art by rach</div>
         
-    </div>
-    
-    
-    <div id="content">
-        
+      </div>
+      
+      
+      <div id="content">
         <div id="scene"> 
-        
-            <span id="background"></span>
-        
-            <div id="pause">
-                <button class="beginbutton" onClick="begin(this);">begin</button>
-            </div>
-        
-            <div id="characters"></div>
-        
-            <div id="cargo">
-                <h2>[_.]^</h2>
-                <div id="cargo-text"></div>
-                <div id="cargo-nav"></div>
-            </div>
-            
+          <span id="background"></span>
+          
+          <div id="pause">
+            <button class="beginbutton" onClick="begin(this);">begin</button>
+          </div>
+          
+          <div id="characters"></div>
+          
+          <div id="cargo">
+            <h2>[_.]^</h2>
+            <div id="cargo-text"></div>
+            <div id="cargo-nav"></div>
+          </div>
         </div>
-        
-    </div><!-- #content -->    
-    
-    
-    <div id="footer">
+      </div><!-- #content -->    
+      
+      
+      <div id="footer">
         site by <a href="http://daiyi.tumblr.com">daiyi!</a> | <a href="https://github.com/daiyiwhale/scuttlebutt">scuttlebutt</a> on github
-    </div>
+      </div>
+      
+    </div><!-- #overall-wrapper -->
 
-    
-</div><!-- #overall-wrapper -->
 
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/scuttlebutt.js"></script>
 
-</body>
+  </body>
 </html>

@@ -1,28 +1,28 @@
 /* 
-OFFICIAL GREEN: 46cb62
-width: 900px;
----------------------------------------- */
+   OFFICIAL GREEN: 46cb62
+   width: 900px;
+   ---------------------------------------- */
 
 * {
-	/* Reset browsers default margin, padding and font sizes */
-	margin: 0;
-	padding: 0;
+    /* Reset browsers default margin, padding and font sizes */
+    margin: 0;
+    padding: 0;
 }
 
 html {
-	font-size: 100%;
-	/* Always show a scrollbar for short pages - stops the jump when the scrollbar appears. non-IE browsers */
-	height: 100%;
-	background-position: top left;
+    font-size: 100%;
+    /* Always show a scrollbar for short pages - stops the jump when the scrollbar appears. non-IE browsers */
+    height: 100%;
+    background-position: top left;
     background-color: #1e1e1e;
 }
 
 body {
-	font-family: 'Lato', Helvetica, sans-serif;
-	font-size: 13px;
-	margin: 0;
-	padding: 0;
-	background-position: top left;
+    font-family: 'Lato', Helvetica, sans-serif;
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+    background-position: top left;
     color: #969696;
 }
 
@@ -40,21 +40,21 @@ a:hover {
 
 
 p {
-	font-size: 13px;
-	margin-bottom: .7em;
+    font-size: 13px;
+    margin-bottom: .7em;
 }
 
 img {
-	border-width: 0;
+    border-width: 0;
 }
 
 hr {
-	border: 0 none #FFFFFF;
-	border-top: 1px solid #454545;
-	height: 1px;
-	margin: 5px 0;
-	display: block;
-	clear: both;
+    border: 0 none #FFFFFF;
+    border-top: 1px solid #454545;
+    height: 1px;
+    margin: 5px 0;
+    display: block;
+    clear: both;
 }
 
 #content {
@@ -88,8 +88,8 @@ hr {
 
 .textblock {
 /*    width: 820;
-    position: absolute; 
-    top: 15px; */
+      position: absolute; 
+      top: 15px; */
 }
 
 #scene {
@@ -125,9 +125,9 @@ hr {
 
 /*** SITE TITLE ***/
 h1 {
-	font-family: "Special Elite", sans-serif;
-	font-weight: normal;
-	font-size: 3em;
+    font-family: "Special Elite", sans-serif;
+    font-weight: normal;
+    font-size: 3em;
     margin: 10px 0px;
 }
 
@@ -142,7 +142,7 @@ h1 a:hover {
 
 /*** story title **/
 #storytitle {
-    font-size: 2em;
+    font-size: 1.5em;
     margin: 10px 0px;
 }
 
@@ -157,33 +157,33 @@ h1 a:hover {
 }
 
 .beginbutton {
-	-moz-box-shadow: 0px 1px 2px 0px #1a1a1a;
-	-webkit-box-shadow: 0px 1px 2px 0px #1a1a1a;
-	box-shadow: 0px 1px 2px 0px #1a1a1a;
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #383838), color-stop(1, #424242) );
-	background:-moz-linear-gradient( center top, #383838 5%, #424242 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#383838', endColorstr='#424242');
-	background-color:#383838;
-	-moz-border-radius:6px;
-	-webkit-border-radius:6px;
-	border-radius:6px;
-	border:1px solid #333333;
-	display:inline-block;
-	color:#c7c7c7;
-	font-family:arial;
-	font-size:15px;
-	font-weight:normal;
-	padding:7px 21px;
-	text-decoration:none;
+    -moz-box-shadow: 0px 1px 2px 0px #1a1a1a;
+    -webkit-box-shadow: 0px 1px 2px 0px #1a1a1a;
+    box-shadow: 0px 1px 2px 0px #1a1a1a;
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #383838), color-stop(1, #424242) );
+    background:-moz-linear-gradient( center top, #383838 5%, #424242 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#383838', endColorstr='#424242');
+    background-color:#383838;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    border-radius:6px;
+    border:1px solid #333333;
+    display:inline-block;
+    color:#c7c7c7;
+    font-family:arial;
+    font-size:15px;
+    font-weight:normal;
+    padding:7px 21px;
+    text-decoration:none;
 }
 .beginbutton:hover {
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #212121), color-stop(1, #424242) );
-	background:-moz-linear-gradient( center top, #212121 5%, #424242 100% );
-	background-color:#212121;
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #212121), color-stop(1, #424242) );
+    background:-moz-linear-gradient( center top, #212121 5%, #424242 100% );
+    background-color:#212121;
 }
 .beginbutton:active {
-	position:relative;
-	top:1px;
+    position:relative;
+    top:1px;
 }
 
 /* for flipping images! */
@@ -199,9 +199,9 @@ h1 a:hover {
 /*** char name ***/
 
 h2 {
-	font-weight: normal;
-	color: #3f3f3f;
-	font-size: 1.7em;
+    font-weight: normal;
+    color: #3f3f3f;
+    font-size: 1.7em;
     margin-top: 15px;
     margin-bottom: 15px;
     color: #46cb62;
@@ -218,9 +218,9 @@ h2 a:hover {
 
 /*** er ***/
 h3 {
-	font-weight: normal;
-	color: #3f3f3f;
-	font-size: 1.2em;
+    font-weight: normal;
+    color: #3f3f3f;
+    font-size: 1.2em;
     margin: 5px 0px;
     color: #46cb62;
 }
@@ -289,36 +289,36 @@ blockquote {
 /* ############################## Search box ############################ */
 
 #search-box {
-	color: #FFFFFF;
-	display: block;
-	text-align: left;
-	white-space: nowrap; /* For Opera */
+    color: #FFFFFF;
+    display: block;
+    text-align: left;
+    white-space: nowrap; /* For Opera */
     clear: both;
 }
 
 #search-box #keywords {
-	width: 70%;
+    width: 70%;
 }
 
 /* .button1 style defined later, just a few tweaks for the search button version */
 #search-box input.button1 {
-	padding: 0px 5px;
+    padding: 0px 5px;
 }
 
 #search-box li {
-	text-align: right;
-	margin-top: 4px;
+    text-align: right;
+    margin-top: 4px;
 }
 
 #search-box img {
-	vertical-align: middle;
+    vertical-align: middle;
 }
 
 
 
 
 /* THE HEADERS AND STUFF IDFK *****************************
----------------------------------------- */
+   ---------------------------------------- */
 
 
 
@@ -333,7 +333,7 @@ h3 a:hover {
 }
 
 /* THE OVERALL SITE NAV *****************************
----------------------------------------- */
+   ---------------------------------------- */
 
 .sitenav-alert {
     background-color: #46cb62;
@@ -355,48 +355,48 @@ h3 a:hover {
 /* General form styles
 ----------------------------------------*/
 select {
-	border-color: #666666;
-	background-color: #454545;
-	color: #969696;
+    border-color: #666666;
+    background-color: #454545;
+    color: #969696;
 }
 
 label {
-	color: #969696;
+    color: #969696;
 }
 
 option.disabled-option {
-	color: #686868;
+    color: #686868;
 }
 
 /* Definition list layout for forms
----------------------------------------- */
+   ---------------------------------------- */
 dd label, fieldset {
-	color: #969696;
+    color: #969696;
 }
 
 /* Hover effects */
 fieldset dl:hover dt label {
-	color: #9f9f9f;
+    color: #9f9f9f;
 }
 
 fieldset.fields2 dl:hover dt label {
-	color: #9f9f9f;
+    color: #9f9f9f;
 }
 
 /* Quick-login on index page */
 fieldset.quick-login input.inputbox {
-	background-color: #212121;
+    background-color: #212121;
 }
 
 /* Input field styles
----------------------------------------- */
+   ---------------------------------------- */
 .inputbox, textarea, #search-box input, select {
-	background-color: #2a2a2a; 
-	border: #2f2f2f 1px solid;
-	color: #969696;
+    background-color: #2a2a2a; 
+    border: #2f2f2f 1px solid;
+    color: #969696;
 }
 #message-box textarea, textarea {
-	color: #969696;
+    color: #969696;
 }
 * html .inputbox, * html textarea, * html #message-box textarea, * html #search-box input, * html select {
     color: #969696;
@@ -404,66 +404,66 @@ fieldset.quick-login input.inputbox {
 
 .inputbox:hover, #search-box input:hover, select:hover, textarea:hover {
     background-color: #2f2f2f;
-	border: #2f2f2f 1px solid;
-	color: #969696;
+    border: #2f2f2f 1px solid;
+    color: #969696;
 }
 #message-box textarea:hover {
-	color: #969696;
-	border-color: #464646;
-	background-color: #212121; 
+    color: #969696;
+    border-color: #464646;
+    background-color: #212121; 
 }
 
 .inputbox:focus, #search-box input:focus, select:focus, textarea:focus {
     background-color: #202020;
-	color: #969696;
+    color: #969696;
 }
 #message-box textarea:focus {
-	color: #fff;
-	border-color: #464646;
-	background-color: #212121; 
+    color: #fff;
+    border-color: #464646;
+    background-color: #212121; 
 }
 
 
 /* Form button styles
----------------------------------------- */
+   ---------------------------------------- */
 
 .choice, a.choice {
-	font-family: 'Lato', Helvetica, sans-serif;
+    font-family: 'Lato', Helvetica, sans-serif;
     padding: 0px;
-	color: #bfbfbf;
-	background: none;
-	border: none;
+    color: #bfbfbf;
+    background: none;
+    border: none;
     margin: 3px 0px;
 }
 .choice:hover {
-	color: #dfdfdf;
+    color: #dfdfdf;
 }
 
 input.button3, a.button2, input.button2 {
-	color: #6f6f6f;
-	background-color: #2d2d2d;
-	border-color: #565656 ;
-	border: #252525 1px solid;
+    color: #6f6f6f;
+    background-color: #2d2d2d;
+    border-color: #565656 ;
+    border: #252525 1px solid;
 }
 
 a.button1, input.button1 {
-	color: #46cb62;
-	background-color: #2d2d2d;
-	border: #252525 1px solid;
+    color: #46cb62;
+    background-color: #2d2d2d;
+    border: #252525 1px solid;
 }
 
 a.button2, input.button2, input.button3 {
-	border-color: #454545;
-	border: #252525 1px solid;
+    border-color: #454545;
+    border: #252525 1px solid;
 }
 
 /* <a> button in the style of the form buttons */
 a.button2, a.button2:link, a.button2:visited, a.button2:active {
-	color: #ddd;
+    color: #ddd;
 }
 
 a.button1, a.button1:link, a.button1:visited, a.button1:active {
-	color: #46cb62;
+    color: #46cb62;
 }
 
 /* Hover states */
@@ -471,18 +471,18 @@ a.button2:hover, input.button2:hover, input.button3:hover, * html input.button2,
     color: #b9b9b9;
     border-color: #343434;
     background-color: #454545;
-	border: #252525 1px solid;
+    border: #252525 1px solid;
 }
 
 a.button1:hover, input.button1:hover, * html input.button1 {
     color: #46cb62;
     border-color: #666;
     background-color: #454545;
-	border: #252525 1px solid;
+    border: #252525 1px solid;
 }
 
 input.disabled, input.disabled:hover, input.disabled:focus {
-	color: #8093A2;
+    color: #8093A2;
 }
 
 input#fileupload, input#fileupload:hover, input#fileupload:focus {
@@ -496,7 +496,7 @@ input#fileupload, input#fileupload:hover, input#fileupload:focus {
     background-color: #343434;
     border: #3a3a3a 1px solid;
     text-align: center;
-	vertical-align: middle;
+    vertical-align: middle;
     padding: 3px;
 }
 .buttons {
@@ -505,22 +505,22 @@ input#fileupload, input#fileupload:hover, input#fileupload:focus {
 
 
 /*  	
---------------------------------------------------------------
-FORMER BUTTON.CSS
--------------------------------------------------------------- */
+	--------------------------------------------------------------
+	FORMER BUTTON.CSS
+	-------------------------------------------------------------- */
 
 
 .buttons {
-	float: left;
-	vertical-align: middle;
+    float: left;
+    vertical-align: middle;
 }
 
 
 .icon-home {
-	background-position: 0 50%;
-	background-repeat: no-repeat;
-	background-image: none;
-	padding: 1px 0 0 14px;
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    background-image: none;
+    padding: 1px 0 0 14px;
 }
 .navbar-top .icon-home {
     padding-top: 0;
