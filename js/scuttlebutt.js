@@ -18,12 +18,6 @@ scuttlebutt = new Scuttlebutt();
 // class instantiation: http://ejohn.org/blog/simple-class-instantiation
 function Scuttlebutt() {
   if (this instanceof Scuttlebutt) {
-/*    var STORY_PATH = "stories/boston";
-    var STORY_NAME = "/boston.json";
-    var IMAGE_FOLDER = "/img/";  // also retures a trailing /
-    var FIRST_SCENE = "intro";
-    var PROTAGONIST = "sir";  */
-    //   console.log(scuttlebutt.story.scenes);
     this.story = {};
     this.currentScene = "";
     this.Q = $({});
@@ -39,7 +33,7 @@ function Scuttlebutt() {
 
     this.setStory = function(storyObj, firstScene, callback) {
       this.story = storyObj;
-      this.currentScene = firstScene;
+      this.currentScene = this.story.scenes[firstScene];
       if (callback) {
 	callback();
       }
@@ -52,11 +46,13 @@ function Scuttlebutt() {
       this.resetView();
       (function(sb) {
 	$.getJSON("stories/" + storyName + "/" + storyName + ".json").done( function(data) {
-	  sb.setStory(data, firstScene);
+	  sb.setStory(data, firstScene, function(){
+	    sb.setScene(firstScene);
+	  });
 	}).fail(function() { 
 	  alert("story loading failed; check your story json, it has to be perfect."); 
 	});
-      })(this);  // pass in the whole scuttlebutt 
+      })(this);  // pass in the whole scuttlebutt so we can use scuttlebutt functions
     };
 
     this.animToQueue = function(queue, selector, animationprops) {
@@ -64,6 +60,161 @@ function Scuttlebutt() {
 	$(selector).animate(animationprops, next);
       });
     }
+
+    // TODO create scene stack for going back to previous scenes?
+    this.setScene = function(scene) {
+      this.Q.clearQueue();
+
+      this.currentScene = this.story.scenes[scene];
+      console.log("current scene = ", this.currentScene);
+      
+      // hide cargo if it's around
+      if ($('#cargo').is(":visible")) {
+	console.log("CARGO EXISTS; HIDING NOW");
+	
+	this.Q.queue('x', function () {
+	  
+	  console.log("QUEUED HIDING CARGO");
+	  
+	  $('#cargo').slideUp( {
+            direction:'down', 
+            duration: 800, 
+            complete: function() {
+              console.log("cargo slid hidden");
+              this.Q.dequeue('x');
+            }
+	  });
+	});
+      }
+      
+      
+      
+      // fade out characters
+      this.Q.queue('x', function() {
+	
+	console.log("QUEUED FADE OUT CHARACTERS");
+	
+	$('#characters').fadeOut(300, function(){
+	  
+	  // clear away characters!
+	  $('#characters').html('');
+	  this.Q.dequeue('x');
+	});
+	
+      });
+      
+      // switch background 
+      this.Q.queue('x', function () {
+	
+	// if background is visible and there's a new background, switch
+	if ($('#background').is(":visible") && current_scene.background) {
+	  
+	  console.log("BACKGROUND IS VISIBLE AND THIS SCENE WANTS ME TO SET A NEW ONE");
+	  
+	  $('#background').fadeOut(300, function(){
+            // set bg 
+            $('#background').css('background-image', 'url(' + STORY_PATH + IMAGE_FOLDER + current_scene.background + ')');
+            this.Q.dequeue('x');
+	  });
+	}
+	
+	// background is not visible, but there's a new background
+	else if (current_scene.background) {
+	  
+	  console.log("BACKGROUND IS NOT VISIBLE, BUT SET NEW BACKGROUND");
+	  
+	  $('#background').css('background-image', 'url(' + STORY_PATH + IMAGE_FOLDER + current_scene.background + ')');
+	  this.Q.dequeue('x');
+	}
+	
+	// otherwise, nothing \o/
+	else {
+	  console.log("BACKGROUND IS NOT VISIBLE SO DO NOTHING");
+	  this.Q.dequeue('x');
+	}
+      });
+      
+      this.Q.queue('x', function () {
+	
+	if (current_scene.background) {
+	  
+	  $('#background').fadeIn(600, function(){
+            console.log("~fading in background~");
+            this.Q.dequeue('x');
+	  });
+	}
+	else {
+	  this.Q.dequeue('x');
+	}
+      });
+      
+      
+      // set characters
+      this.Q.queue('x', function () {
+	
+	console.log("QUEUED SET CHARACTERS");
+	
+	
+	for (var i = 0; i < current_scene.characters.length; i++) {
+	  
+	  $( "<img/>" ).attr( "src", STORY_PATH + IMAGE_FOLDER + current_scene.characters[i][0] + '.png' ).addClass(current_scene.characters[i][1]).appendTo( "#characters" );
+	}
+	
+	this.Q.dequeue('x');
+      });
+      
+      
+      // fade in characters if they exist
+      
+      this.Q.queue('x', function () {
+	
+	if ($('#characters').html() != "") {
+	  
+	  console.log("QUEUE4");
+	  
+	  $('#characters').fadeIn(600, function(){
+            
+            this.Q.dequeue('x');
+	  });
+	}
+	else {
+	  this.Q.dequeue('x');
+	}
+      });
+      
+      
+      this.Q.queue('x', function () {
+	
+	console.log("QUEUED SETTING TITLE/TEXT AND BACKGROUND");
+	
+	
+	
+	// set title
+	$('#cargo h2').html(current_scene.name.replace('HOTA$$', PROTAGONIST));
+	
+	// stick first block of text in
+	feedText(0);
+	
+	this.Q.dequeue('x');
+      });
+
+      // slide in cargo
+      this.Q.queue('x', function () {
+	console.log("QUEUE2");
+	$('#cargo').slideDown( {
+	  direction:'up', 
+	  duration: 800, 
+	  complete: function() {
+            displayText(0);
+            console.log("cargo slid in");
+            this.Q.dequeue('x');
+	  }
+	});
+      });
+      
+      this.Q.dequeue('x');
+    }
+
 
 
   } else {
@@ -76,12 +227,12 @@ function Scuttlebutt() {
 //var STORY_NAME = "/boston.json";
 //var IMAGE_FOLDER = "/img/";  // also retures a trailing /
 //var FIRST_SCENE = "intro";
-var PROTAGONIST = "sir";
+//var PROTAGONIST = "sir";
 
 //var Q = $({});
 
-var story;
-var current_scene;
+//var story;
+//var current_scene;
 
 /*
 jQuery(document).ready(function() {
