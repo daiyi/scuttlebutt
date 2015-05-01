@@ -76,6 +76,8 @@
                 "Most elephants weigh less than a blue whale's tongue. Imagine now being licked by a whale. Dear god. Baby whales grow at an average rate of 10lbs per hour. Truly terrifying. "
             ],
             "background": "placeholder-ocean.jpg",
+            "characters": [
+            ],
             "next": [
                 ["t2", "Talk to Shay!"],
                 ["t3", "You want to talk to Saber."]
