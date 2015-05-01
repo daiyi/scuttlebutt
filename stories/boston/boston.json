@@ -60,7 +60,7 @@
         "t0": {
             "name": "Hello HOTA$$.",
             "text": [
-                "Because the real story has yet to be finished, you will now be passive-aggressively launched into a world of whale facts. Did you know that whales have hair? Most people don’t think that whales have hair but they do. However, it is very thin and very light so unless you are seeing one up close you wouldn’t think it was there at all. If you were close enough to a whale to see its hair you would probably be too concerned with your structural integrity to appreciate it though. "
+                "Because the real story has yet to be finished, you will now be launched into a world of whale facts. Did you know that whales have hair? They are mammals after all. The hair is very thin and very light so unless you are seeing one up close you wouldn’t think it was there at all. If you were close enough to a whale to see its hair you would probably be too concerned with your own mortality to fully appreciate it."
             ],
             "background": "darkfloral_gray.jpg",
             "characters": [
@@ -71,129 +71,83 @@
             ]
         },
         "t1": {
-            "name": "Kujira",
+            "name": "The Fearsome Ocean",
             "text": [
-                "Most elephants weigh less than a blue whale's tongue. SO WHAT WOULD HAPPEN IF A WHALE LICKED YOU? O__O oh god. Baby whales grow at an average rate of 10lbs per hour. Terrifying. "
+                "Most elephants weigh less than a blue whale's tongue. Imagine now being licked by a whale. Dear god. Baby whales grow at an average rate of 10lbs per hour. Truly terrifying. "
             ],
             "background": "placeholder-ocean.jpg",
-            "characters": [
-                ["justine", "normal"],
-                ["justine", "normal"]
-            ],
             "next": [
                 ["t2", "Talk to Shay!"],
-                ["t3", "Dude HOTA$$. You wanna talk to ~le Saber~"]
+                ["t3", "You want to talk to Saber."]
             ]
         },
         "t2": {
             "name": "Shay",
             "text": [
-                "The adult male Strap-toothed whale has boar-like tusks on each side of his lower jaw that may become a foot long and wrap around the upper jaw. These tusks can restrict the whale from opening his mouth which is a problem since he has to suck up squid in order to survive. Awkward |:"
+                "The adult male Strap-toothed whale has boar-like tusks on each side of his lower jaw that may become a foot long and wrap around the upper jaw. These tusks can restrict the whale from opening his mouth which is a problem since he has to suck up squid in order to survive. Awkward."
             ],
             "background": "placeholder-underground.jpg",
             "characters": [
                 ["shay-neutral", "normal"]
             ],
             "next": [
-                ["t3", "talk to Saber!"],
-                ["t7", "TALK TO KUJIRA 8D"],
-                ["t4", "Oh hey Amaranth O:"]
+                ["t3", "Talk to Saber!"],
+                ["t4", "Talk to Amaranth"]
             ]
         },
         "t3": {
             "name": "Saber",
             "text": [
-                "tup, HOTA$$. Sometimes, as the whales are migrating, they swim very close to the shore and can be seen \"blowing\" and jumping out of the water. This jumping is called \"breaching.\" Heh. Whales like to hold contests among themselves to see how epic their breaches can be. +10 points for hitting a small ship, +900000 for licking the moon :DD"
+                "Sometimes, as the whales are migrating, they swim very close to the shore and can be seen \"blowing\" and jumping out of the water. This jumping is called \"breaching.\" Heh. Whales like to hold contests among themselves to see how epic their breaches can be. +10 points for hitting a small ship, +900000 for licking the moon."
             ],
             "background": "placeholder-city.jpg",
             "characters": [
                 ["saber-neutral", "normal"]
             ],
             "next": [
-                ["t7", "Talk to Kujira [_.]^"],
-                ["t5", "seek Thirteen's advice"],
-                ["t2", "Talk to Shaybutt"]
+                ["t5", "Seek Thirteen's advice"],
+                ["t2", "Talk to Shay!"]
             ]
         },
         "t4": {
             "name": "Amaranth",
             "text": [
-                "I'm going to eat your face."
+                "I'm moody and silent. No whale facts."
             ],
             "background": "placeholder-rawr.jpg",
             "characters": [
                 ["amaranth", "normal"]
             ],
             "next": [
-                ["t7", "seek emotional support from Kujira [_.]^"],
-                ["t2", "eat Shaybutt"],
-                ["t3", "run to Saberbutt"]
+                ["t2", "Talk to Shay!"],
+                ["t3", "Talk to Saber instead."]
             ]
         },
         "t5": {
             "name": "Thirteen",
             "text": [
-                "You can't wear wristwatches if you are a whale you know."
+                "You can't wear wristwatches if you are a whale, you know."
             ],
             "background": "placeholder-underground.jpg",
             "characters": [
                 ["thirteen", "normal"]
             ],
             "next": [
-                ["t6", "what does Shay have to say about this"]
-            ]
-        },
-        "t7": {
-            "name": "Kujira",
-            "text": [
-                "As you can see, I have reverted to my human form. [_u]^"
-            ],
-            "background": "placeholder-ocean.jpg",
-            "characters": [
-                ["kujira-neutral", "normal"]
-            ],
-            "next": [
-                ["t6", "YO Shay--"]
+                ["t6", "what does Shay have to say about this?"]
             ]
         },
         "t6": {
             "name": "Shay",
             "text": [
-                "I ... -buries self into ice cream-"
+                "> User is too busy eating ice cream to respond. "
             ],
             "background": "placeholder-underground.jpg",
             "characters": [
                 ["shay-neutral", "flipped"]
             ],
             "next": [
-                ["t8", "DUDE."]
             ]
-        },
-        "t8": {
-            "name": "Kujira",
-            "text": [
-                "HEY I WANTED ICE CREAM NO FAAAIR -BUTT PUNCHES"
-            ],
-            "background": "placeholder-underground.jpg",
-            "characters": [
-                ["kujira-neutral", "flipped"]
-            ],
-            "next": [
-                ["t9", ":U :U :U"]
-            ]
-        },
-        "t9": {
-            "name": "Shay",
-            "text": [
-                "-this user is too busy flying to the moon to respond-"
-            ],
-            "background": "placeholder-underground.jpg",
-            "characters": [
-            ], 
-            "next": [
-            ]
-        },
-        
+        },        
         
         
         "example_": {
